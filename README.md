@@ -13,7 +13,10 @@ The project focuses on analyzing airline passenger satisfaction based on survey 
 
 •	Key Variables: Passenger demographics, flight details (e.g., class, distance), service ratings, delay times, and overall satisfaction levels.
 
-•	Analysis:
+## Data Source
+The dataset for this project is sourced from Maven Analytics [website](https://app.mavenanalytics.io/datasets?search=Airline+pa) designed for practice purposes. The dataset consists of structured tables containing information on passenger satisfaction ratings, flight details, and customer demographics.The dataset is in a structured format and comprises several key tables:
+
+### • Analysis:
 
 o	Determining which factors contribute most to overall satisfaction.
 
@@ -46,6 +49,8 @@ o	Identify passengers who traveled the longest distance but had the lowest satis
 
 •	Identify Areas of Improvement: Analyzing satisfaction trends helps pinpoint specific service aspects, such as seat comfort or in-flight entertainment, that require enhancement.
 
-•	Competitive Benchmarking: The insights from this analysis can serve as a benchmark for tracking improvements over time and staying competitive in the airline industry
+•	Competitive Benchmarking: The insights from this analysis can serve as a benchmark for tracking improvements over time and staying competitive in the airline industry.
+
+
 
 
