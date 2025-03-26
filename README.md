@@ -36,25 +36,26 @@ The dataset for this project is sourced from Maven Analytics [website](https://a
 
 ###  Analysis
 
-o	Determining which factors contribute most to overall satisfaction.
 
-o	Calculating the percentage of satisfied passengers for each type of travel.
+-	Determining which factors contribute most to overall satisfaction.
 
-o	Assessing differences in satisfaction between flight classes and customer types.
+-	Calculating the percentage of satisfied passengers for each type of travel.
 
-o	Evaluating the impact of delays on passenger satisfaction.
+-	Assessing differences in satisfaction between flight classes and customer types.
 
-o	Finding the average flight distance for passengers traveling for business vs. personal travel.
+-	Evaluating the impact of delays on passenger satisfaction.
 
-o	Counting the number of passengers who are first-time customers.
+-	Finding the average flight distance for passengers traveling for business vs. personal travel.
 
-o	Retrieving all passengers who are satisfied with their experience.
+-	Counting the number of passengers who are first-time customers.
 
-o	Identifying the  passengers who gave the highest ratings for both "Seat Comfort" and "Leg Room Service.
+-	Retrieving all passengers who are satisfied with their experience.
 
-o	Determine if younger passengers (under 30) are more likely to be satisfied compared to the older passengers.
+-	Identifying the  passengers who gave the highest ratings for both "Seat Comfort" and "Leg Room Service.
 
-o	Identify passengers who traveled the longest distance but had the lowest satisfaction rating.
+-	Determine if younger passengers (under 30) are more likely to be satisfied compared to the older passengers.
+
+-	Identify passengers who traveled the longest distance but had the lowest satisfaction rating.
 
 ## Objectives
 •	Enhance Customer Experience: By analyzing passenger feedback, airlines can identify key areas for service improvements, leading to a more positive travel experience.
