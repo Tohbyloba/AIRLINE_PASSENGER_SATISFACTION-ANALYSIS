@@ -226,7 +226,112 @@ ORDER BY
 This  query calculates the average cleanliness rating for passengers based on their satisfaction level. It groups passengers into two categories: Satisfied and Neutral or Dissatisfied, then computes the average cleanliness rating for each group.
 
 The results show that satisfied passengers rated cleanliness higher, with an average score of 3, while neutral or dissatisfied passengers gave a lower rating of 2. This suggests that cleanliness plays a significant role in passenger satisfaction and may be a key factor in improving overall airline service quality.
+```SQL
+SELECT  
+          Class, 
+       COUNT(In_flight_Entertainment) AS total_passengers,
+       COUNT(CASE WHEN "In_flight_Entertainment" <= 3 THEN 1 END) AS Low_star_ratings
+FROM 
+airline_passenger_satisfaction
+GROUP BY 
+          Class
+ORDER BY 
+       Low_star_ratings DESC
+```
+|Class|Total_Passengers|Low_star_ratings|
+|-----|----------------|----------------|
+|Economy|	58309|	33491|
+|Business	|62160	|22721|
+|Economy Plus|	9411|	5333|
 
+This  query evaluates the number of passengers in each airline class and identifies how many of them gave low ratings (3 or below) for in-flight entertainment. Economy Class Receives the Most Low Ratings 33,491 passengers in Economy gave a low rating, the highest among all classes.This suggests that in-flight entertainment in Economy may need significant improvements.Business Class Has the Second-Highest Low Rating 22,721 passengers in Business Class rated in-flight entertainment 3 or lower.Economy Plus Shows the Lowest Complaint Rate:Only 5,333 passengers in Economy Plus reported dissatisfaction.
+
+This suggests that in-flight entertainment might be slightly better in Economy Plus class compared to others.
+
+
+ - List of passenger dissatisfied with wifi service
+```SQL
+select 
+      In_flight_service,
+Count(*) As Diss_service
+From 
+      airline_passenger_satisfaction
+where 
+     Satisfaction = 'Neutral or Dissatisfied'
+Group by 
+        In_flight_service
+Order by  
+        Diss_service
+```
+|In_flight_service|Diss_service|
+|-----------------|------------|
+|0                 |	5|
+ |1	     |6274|
+|2	|10003|
+|5	|13246|
+|3|	19233|
+|4|	24691|
+
+Majority of Dissatisfied Passengers Rated Service Between 3 and 5. 24,691 passengers rated in-flight service 4, the most common rating among dissatisfied passengers.19,233 passengers gave a rating of 3, indicating a large number of passengers found the service average but not satisfactory.13,246 passengers rated it 5, suggesting that even some passengers who gave a high rating to in-flight service were still dissatisfied overall.
+
+ - Recommendations:
+   
+Investigate why many dissatisfied passengers still rated in-flight service 4 or 5.
+
+Improve service quality for passengers rating in-flight service 3 and below by addressing common complaints.
+
+Also, improving in-flight service, airlines can reduce dissatisfaction and enhance overall passenger experience.
+
+
+
+### Recommendation Report: Airline Passenger Satisfaction Analysis
+ - Key Findings:
+ - Delays Impact All Classes:
+
+ - Business class has the highest average flight delay (35.42 minutes), followed by Economy Plus (34.08 minutes) and Economy (32.59 minutes).
+
+Delays may significantly contribute to dissatisfaction among passengers.
+
+ - Cleanliness Matters
+
+Satisfied passengers rated cleanliness at 3.75, while dissatisfied passengers gave it a lower score of 2.93.
+
+This indicates that maintaining a clean environment is essential for improving customer satisfaction.
+
+ - Check-in Service Complaints are High
+
+43,783 dissatisfied passengers reported issues with check-in services (rating 3 or below).
+
+Streamlining check-in processes can improve the passenger experience.
+
+ - Upgrade in-flight entertainment in Economy and Business classes by adding more content variety, improving screen quality, and ensuring better functionality.
+
+ - Improve WiFi connectivity to enhance streaming experiences.
+
+
+### Actionable Recommendations
+ - Reduce Flight Delays:
+
+ - Identify operational inefficiencies causing delays, especially in Business Class.
+
+ - Improve scheduling and turnaround times to reduce wait times.
+
+ - Improve Cleanliness environment.
+
+  - Enhance Check-in Services on time 
+
+
+Upgrade In-flight Entertainment & WiFi:
+
+Expand entertainment selections and improve screen quality.
+
+Enhance WiFi connectivity to provide a smoother browsing experience.
+
+
+### Conclusion:
+The analysis highlights critical service gaps affecting passenger satisfaction, particularly in delays, cleanliness, check-in service,food and drinks, and in-flight WiFi. Addressing these concerns can significantly improve customer experience and loyalty.
+
+Thank you for reading. ​
 
 
 
