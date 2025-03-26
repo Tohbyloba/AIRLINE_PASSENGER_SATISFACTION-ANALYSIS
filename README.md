@@ -132,12 +132,18 @@ ORDER BY
  Age_Group;
 ```
 
-Age_Grop      Satisfied_count
-18-25	         6358
-26-35	         8873
-36-45	          15942
-46-56	          16485
-57+	          8770
+  | Age_Group | Satisfied |
+  | --------- | --------- |
+   | 18-25    | 6358      |
+   | 26-35    |  8873     |
+   | 36-45    |  15942     |
+   | 46-56    |    16485    |
+   | 57+      |  8770      |
+   
+
+ The SQL query categorizes airline passengers into different age groups and counts the number of satisfied passengers in each group. The results show that the 46-56 age group has the highest number of satisfied passengers (16,485), followed closely by the 36-45 age group (15,942). The 26-35 and 57+ age groups have 8,873 and 8,770 satisfied passengers, respectively, while the 18-25 age group has the lowest count at 6,358. The data is ordered by age group for better readability.
+
+
 
 •	Analyze key aspect  if food and drink quality impacts satisfaction.
 ```SQL
@@ -153,12 +159,18 @@ ORDER BY
  Satisfaction_Rate DESC
 ```
 
-Food_and_Drink      Total_Passengers       Satisfaction_Rate
-           5	                         27957	                55.088171119934
-          4	                         30563	               52.583188823086
-          0	                         132	                41.666666666666
-          3	                        27794	                 39.742390443980
-          2	                        27383	                  38.900047474710
-          1	                        16051	                   19.955142981745
+| Food_and_Drink | Total_Passengers|Satisfaction_Rate|
+| -------------- | ---------------- |-----------------|
+|         5	     |        27957      |    55.088171119934|
+|         4	     |         30563	    |    52.583188823086 |
+ |         0	    |      132	         |     41.666666666666|
+  |        3	      |      27794	        |    39.742390443980|
+   |       2	    |      27383	         |       38.900047474710|
+   |       1	    |       16051	        |      19.955142981745|
+
+
+  The SQL query analyzes passenger satisfaction based on ratings for Food and Drink services. It groups passengers by their Food_and_Drink rating (from 0 to 5) and calculates the total number of passengers in each category along with the satisfaction rate (percentage of satisfied passengers).
+
+The results indicate that passengers who rated Food and Drink as 5 had the highest satisfaction rate (55.09%), followed by those who rated it 4 (52.58%). Conversely, passengers who gave the lowest rating (1) had the lowest satisfaction rate (19.96%), suggesting a strong correlation between food quality and overall satisfaction.
 
 
