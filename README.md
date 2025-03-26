@@ -174,3 +174,60 @@ ORDER BY
 The results indicate that passengers who rated Food and Drink as 5 had the highest satisfaction rate (55.09%), followed by those who rated it 4 (52.58%). Conversely, passengers who gave the lowest rating (1) had the lowest satisfaction rate (19.96%), suggesting a strong correlation between food quality and overall satisfaction.
 
 
+
+ - Determining  the average delay (departure + arrival) for each airline class,but only for flights where passengers were dissatisfied.
+
+
+
+```SQL
+  SELECT
+          class,
+ROUND
+(AVG("Departure_Delay"+"Arrival_Delay"),2) As Flight_Delay
+FROM
+airline_passenger_satisfaction
+WHERE
+ Satisfaction = 'Neutral or Dissatisfied'
+GROUP BY
+ class
+ ```
+
+|Class|Flight_Delay|
+|-----|------------|
+|Economy|	32.52|
+|Business	|35.36|
+|Economy Plus|	33.98|
+
+The SQL query calculates the average total flight delay (sum of departure delay and arrival delay) for each airline class, but only for flights where passengers were neutral or dissatisfied with their experience.
+
+The results show that Business class has the highest average flight delay (35.36 minutes), followed by Economy Plus (33.98 minutes) and Economy (32.52 minutes). The analysis helps in identifying the impact of delays on customer satisfaction across different airline classes.
+
+
+
+ - Finding the average cleanliness rating for satisfied and dissatisfied passengers.
+```SQL
+SELECT
+       Satisfaction,
+AVG(Cleanliness) as Cleanliness_Rating
+FROM
+       airline_passenger_satisfaction
+GROUP BY
+      Satisfaction
+ORDER BY
+           Cleanliness_Rating DESC
+```
+
+|Satisfaction|Cleanliness_Rating|
+|------------|------------------|
+|Satisfied   |	3  |
+|Neutral or Dissatisfied	|2      |
+
+
+This  query calculates the average cleanliness rating for passengers based on their satisfaction level. It groups passengers into two categories: Satisfied and Neutral or Dissatisfied, then computes the average cleanliness rating for each group.
+
+The results show that satisfied passengers rated cleanliness higher, with an average score of 3, while neutral or dissatisfied passengers gave a lower rating of 2. This suggests that cleanliness plays a significant role in passenger satisfaction and may be a key factor in improving overall airline service quality.
+
+
+
+
+
