@@ -4,13 +4,11 @@ This SQL-based analysis of airline passenger satisfaction reveals significant tr
 ## Table of Content
  - Project Overview
  - Project Scope
- - Business Objective
  - Purpose of the Dataset
- - Use Case
  - Data Source
- - Dataset Overview
- - Data Cleaning and Processing
- - Data Analysis and Insight
+  -  Data Analysis
+ - Objective
+ - Data cleansing and processing
  - Recommendation
  - Conclusion
 
@@ -93,18 +91,13 @@ Airport_Id = ID
 ```
 
 
- - •	Airport_ID: This column represents the Airport_ID for each passengers. Below is the SQL code used to create and update the column;
+ - •	Airport_ID: This column represents the Airport_ID for each passengers. 
    
-- Do Airline Passenger Satisfaction Levels Fluctuate Based on Travel Patterns?
-   
-- This analysis aims to determine whether airline passenger satisfaction levels fluctuate based on travel patterns over time. Identifying trends in satisfaction can provide valuable insights into passenger behavior, service quality, and external factors that may influence customer experiences.
+- This analysis aims to determine whether airline passenger satisfaction levels fluctuate based on travel patterns over time. Identifying trends in satisfaction can provide valuable insights into passenger behavior, service quality, and external factors that may influence customer experiences.Recognizing trends in satisfaction can help airlines refine their operational strategies, proactively addressing common passenger concerns before they lead to dissatisfaction.
+
+- Group passengers by age range (e.g., 18-25, 26-35, etc.) and count the number of satisfied customers in each group.
 
 
-Understanding these patterns allows airlines to make data-driven decisions to enhance customer satisfaction. For example, if satisfaction levels decline during high-traffic periods—such as holidays or peak travel seasons—airlines can optimize staffing, improve service offerings, or adjust flight schedules to better accommodate passenger needs.
-
-
-Additionally, recognizing trends in satisfaction can help airlines refine their marketing and operational strategies, proactively addressing common passenger concerns before they lead to dissatisfaction.
-In summary, analyzing variations in passenger satisfaction over time enables airlines to improve service quality, efficiently allocate resources, and enhance the overall travel experience. This insight is particularly valuable for major airlines, as it plays a crucial role in maintaining brand reputation, fostering customer loyalty, and staying competitive in the industry.
 
 ```SQL
 SELECT
@@ -141,11 +134,11 @@ ORDER BY
    | 57+      |  8770      |
    
 
- The SQL query categorizes airline passengers into different age groups and counts the number of satisfied passengers in each group. The results show that the 46-56 age group has the highest number of satisfied passengers (16,485), followed closely by the 36-45 age group (15,942). The 26-35 and 57+ age groups have 8,873 and 8,770 satisfied passengers, respectively, while the 18-25 age group has the lowest count at 6,358. The data is ordered by age group for better readability.
+ Thhis analysis  categorizes airline passengers into different age groups and counts the number of satisfied passengers in each group. The results show that the 46-56 age group has the highest number of satisfied passengers (16,485), followed closely by the 36-45 age group (15,942). The 26-35 and 57+ age groups have 8,873 and 8,770 satisfied passengers, respectively, while the 18-25 age group has the lowest count at 6,358. The data is ordered by age group for better readability.
 
 
 
-•	Analyze key aspect  if food and drink quality impacts satisfaction.
+•	Analyzing the key aspect  if food and drink quality impacts satisfaction.
 ```SQL
 SELECT 
     "Food_and_Drink",
@@ -169,7 +162,7 @@ ORDER BY
    |       1	    |       16051	        |      19.955142981745|
 
 
-  The SQL query analyzes passenger satisfaction based on ratings for Food and Drink services. It groups passengers by their Food_and_Drink rating (from 0 to 5) and calculates the total number of passengers in each category along with the satisfaction rate (percentage of satisfied passengers).
+  The  query analyzes passenger satisfaction based on ratings for Food and Drink services. It groups passengers by their Food_and_Drink rating (from 0 to 5) and calculates the total number of passengers in each category along with the satisfaction rate (percentage of satisfied passengers).
 
 The results indicate that passengers who rated Food and Drink as 5 had the highest satisfaction rate (55.09%), followed by those who rated it 4 (52.58%). Conversely, passengers who gave the lowest rating (1) had the lowest satisfaction rate (19.96%), suggesting a strong correlation between food quality and overall satisfaction.
 
@@ -198,7 +191,7 @@ GROUP BY
 |Business	|35.36|
 |Economy Plus|	33.98|
 
-The SQL query calculates the average total flight delay (sum of departure delay and arrival delay) for each airline class, but only for flights where passengers were neutral or dissatisfied with their experience.
+This query calculates the average total flight delay (sum of departure delay and arrival delay) for each airline class, but only for flights where passengers were neutral or dissatisfied with their experience.
 
 The results show that Business class has the highest average flight delay (35.36 minutes), followed by Economy Plus (33.98 minutes) and Economy (32.52 minutes). The analysis helps in identifying the impact of delays on customer satisfaction across different airline classes.
 
@@ -226,6 +219,8 @@ ORDER BY
 This  query calculates the average cleanliness rating for passengers based on their satisfaction level. It groups passengers into two categories: Satisfied and Neutral or Dissatisfied, then computes the average cleanliness rating for each group.
 
 The results show that satisfied passengers rated cleanliness higher, with an average score of 3, while neutral or dissatisfied passengers gave a lower rating of 2. This suggests that cleanliness plays a significant role in passenger satisfaction and may be a key factor in improving overall airline service quality.
+
+- Finding the class of travel where passengers were likely to give low rating for In-flight Entertainment.
 ```SQL
 SELECT  
           Class, 
@@ -284,7 +279,7 @@ Also, improving in-flight service, airlines can reduce dissatisfaction and enhan
 
 
 
-### Recommendation Report: Airline Passenger Satisfaction Analysis
+### Recommendation on Dataset
  - Key Findings:
  - Delays Impact All Classes:
 
@@ -298,11 +293,7 @@ Satisfied passengers rated cleanliness at 3.75, while dissatisfied passengers ga
 
 This indicates that maintaining a clean environment is essential for improving customer satisfaction.
 
- - Check-in Service Complaints are High
-
-43,783 dissatisfied passengers reported issues with check-in services (rating 3 or below).
-
-Streamlining check-in processes can improve the passenger experience.
+ - Check-in Service Complaints are High. 43,783 dissatisfied passengers reported issues with check-in services (rating 3 or below).
 
  - Upgrade in-flight entertainment in Economy and Business classes by adding more content variety, improving screen quality, and ensuring better functionality.
 
@@ -321,11 +312,10 @@ Streamlining check-in processes can improve the passenger experience.
   - Enhance Check-in Services on time 
 
 
-Upgrade In-flight Entertainment & WiFi:
+  - Upgrade In-flight Entertainment & WiFi:
 
-Expand entertainment selections and improve screen quality.
 
-Enhance WiFi connectivity to provide a smoother browsing experience.
+  - Enhance WiFi connectivity to provide a smoother browsing experience.
 
 
 ### Conclusion:
