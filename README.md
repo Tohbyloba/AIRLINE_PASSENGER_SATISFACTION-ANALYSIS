@@ -72,11 +72,12 @@ The dataset for this project is sourced from Maven Analytics [website](https://a
 
 
 ## Data Cleaning and Processing
+ This analysis aims to determine whether airline passenger satisfaction levels fluctuate based on travel patterns over time. Identifying trends in satisfaction can provide valuable insights into passenger behavior, service quality, and external factors that may influence customer experiences.Recognizing trends in satisfaction can help airlines refine their operational strategies, proactively addressing common passenger concerns before they lead to dissatisfaction.
  
 The dataset contains 129,880 entries and 24 columns. It is generally well-structured, with appropriate data types for each column. 
 The following procedures were carried out during the data processing phase.
 
-- 1. Created New column
+-  Created New column
   
 A new column was added to enhance the dataset and enable more detailed analysis.
 
@@ -92,9 +93,9 @@ Airport_Id = ID
 ```
 
 
- - •	Airport_ID: This column represents the Airport_ID for each passengers. 
+ - Airport_ID: This column represents the Airport_ID for each passengers. 
    
-- This analysis aims to determine whether airline passenger satisfaction levels fluctuate based on travel patterns over time. Identifying trends in satisfaction can provide valuable insights into passenger behavior, service quality, and external factors that may influence customer experiences.Recognizing trends in satisfaction can help airlines refine their operational strategies, proactively addressing common passenger concerns before they lead to dissatisfaction.
+
 
 - Group passengers by age range (e.g., 18-25, 26-35, etc.) and count the number of satisfied customers in each group.
 
