@@ -1,6 +1,19 @@
 # AIRLINE_PASSENGER_SATISFACTION-ANALYSIS
 This SQL-based analysis of airline passenger satisfaction reveals significant trends in service quality and operational performance.
 
+## Table of Content
+ - Project Overview
+ - Project Scope
+ - Business Objective
+ - Document Purpose
+ - Use Case
+ - Data Source
+ - Dataset Overview
+ - Data Cleaning and Processing
+ - Data Analysis and Insight
+ - Recommendation
+ - Conclusion
+
 ## Overview of the dataset
 The project focuses on analyzing airline passenger satisfaction based on survey responses and operational data. The dataset includes information on passenger demographics, flight details, and ratings for various aspects of the travel experience. The analysis aims to identify key factors influencing passenger satisfaction, including service quality, comfort, and operational efficiency. Additionally, trends related to flight delays, class preferences, and customer types will be examined to provide actionable insights for improving airline services.
 
