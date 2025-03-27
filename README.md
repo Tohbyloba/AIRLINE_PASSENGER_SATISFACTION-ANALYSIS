@@ -5,10 +5,10 @@ This SQL-based analysis of airline passenger satisfaction reveals significant tr
  - Project Overview
  - Project Scope
  - Purpose of the Dataset
- - Data Source
-  -  Data Analysis
+ - Data Sources
  - Objective
  - Data cleansing and processing
+ -   Data Analysis
  - Recommendation
  - Conclusion
 
@@ -34,28 +34,6 @@ This dataset is intended for educational and analytical purposes, enabling resea
 ## Data Source
 The dataset for this project is sourced from Maven Analytics [website](https://app.mavenanalytics.io/datasets?search=Airline+pa) designed for practice purposes. The dataset consists of structured tables containing information on passenger satisfaction ratings, flight details, and customer demographics.The dataset is in a structured format and comprises several key tables:
 
-###  Analysis
-
-
--	Determining which factors contribute most to overall satisfaction.
-
--	Calculating the percentage of satisfied passengers for each type of travel.
-
--	Assessing differences in satisfaction between flight classes and customer types.
-
--	Evaluating the impact of delays on passenger satisfaction.
-
--	Finding the average flight distance for passengers traveling for business vs. personal travel.
-
--	Counting the number of passengers who are first-time customers.
-
--	Retrieving all passengers who are satisfied with their experience.
-
--	Identifying the  passengers who gave the highest ratings for both "Seat Comfort" and "Leg Room Service.
-
--	Determine if younger passengers (under 30) are more likely to be satisfied compared to the older passengers.
-
--	Identify passengers who traveled the longest distance but had the lowest satisfaction rating.
 
 ## Objectives
 •	Enhance Customer Experience: By analyzing passenger feedback, airlines can identify key areas for service improvements, leading to a more positive travel experience.
@@ -278,6 +256,32 @@ Investigate why many dissatisfied passengers still rated in-flight service 4 or 
 Improve service quality for passengers rating in-flight service 3 and below by addressing common complaints.
 
 Also, improving in-flight service, airlines can reduce dissatisfaction and enhance overall passenger experience.
+
+
+
+## Analysis
+
+
+-	Determining which factors contribute most to overall satisfaction.
+
+-	Calculating the percentage of satisfied passengers for each type of travel.
+
+-	Assessing differences in satisfaction between flight classes and customer types.
+
+-	Evaluating the impact of delays on passenger satisfaction.
+
+-	Finding the average flight distance for passengers traveling for business vs. personal travel.
+
+-	Counting the number of passengers who are first-time customers.
+
+-	Retrieving all passengers who are satisfied with their experience.
+
+-	Identifying the  passengers who gave the highest ratings for both "Seat Comfort" and "Leg Room Service.
+
+-	Determine if younger passengers (under 30) are more likely to be satisfied compared to the older passengers.
+
+-	Identify passengers who traveled the longest distance but had the lowest satisfaction rating.
+
 
 
 
